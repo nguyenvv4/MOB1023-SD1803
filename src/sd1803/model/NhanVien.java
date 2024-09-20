@@ -12,7 +12,9 @@ public class NhanVien {
 
     private String id;
 
-    private String name;
+    private String hoTen;
+
+    private String diaChi;
 
     public String getId() {
         return id;
@@ -22,17 +24,26 @@ public class NhanVien {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getHoTen() {
+        return hoTen;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
     }
 
-    public NhanVien(String id, String name) {
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
+    }
+
+    public NhanVien(String id, String hoTen, String diaChi) {
         this.id = id;
-        this.name = name;
+        this.hoTen = hoTen;
+        this.diaChi = diaChi;
     }
 
     public NhanVien() {
